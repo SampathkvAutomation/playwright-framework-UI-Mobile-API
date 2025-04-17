@@ -1,0 +1,332 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test editpad @editpad
+- Location: C:\Users\kvsam\playwright-framework-UI-Mobile-API\tests\ui\Editpadorg.spec.ts:4:5
+
+# Error details
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.editpad.org/", waiting until "load"
+
+    at C:\Users\kvsam\playwright-framework-UI-Mobile-API\tests\ui\Editpadorg.spec.ts:6:16
+```
+
+# Page snapshot
+
+```yaml
+- link "Edit Pad - Free Online Text Editor Editpad":
+  - img "Edit Pad - Free Online Text Editor"
+  - text: Editpad
+- link "+"
+- img "search on editpad"
+- link "Premium Button Icon Get Premium":
+  - img "Premium Button Icon"
+  - text: Get Premium
+- link "Login"
+- link "AI Detector"
+- link "Humanize AI Text"
+- link "Plagiarism Checker"
+- link "Paraphrasing Tool"
+- link "Story Generator"
+- link "Text Summarizer"
+- link "AI Essay Writer"
+- button "Close Icon":
+  - img "Close Icon"
+- paragraph: Welcome to EditPad.org - your online plain text editor. Click on buttons below or Press Any Key to create new note.
+- heading "Editpad - Online Notepad & Wordpad for Notes" [level=1]
+- paragraph: Editpad is an online notepad developed for editing plain text. This wordpad works similar to the online text editor of Microsoft.
+- heading "How to use Text Editor?" [level=2]
+- paragraph: Open Editpad Wordpad and start creating the notes online. You can also copy-paste to edit text and save it for later use.
+- paragraph: Besides this, our online notepad allows users to upload files from a computer, Google Drive, and One Drive. (under development)
+- paragraph: You can add, delete, and copy-paste text on the online text pad (notebook).
+- heading "Advanced Editor Features of NotePad Online" [level=2]
+- list:
+  - listitem:
+    - strong: "Word Count:"
+    - text: Our online textpad (notebook) allows you to check the total number of words written or pasted. And you can convert
+    - link "words to pages"
+    - text: also.
+  - listitem:
+    - strong: "Character Count:"
+    - text: You can also check the exact number of characters in your writing by using this feature. It will promptly count characters and spaces and will display the result.
+    - img "Online Notepad"
+  - listitem:
+    - strong: "Check Plagiarism and Grammar:"
+    - text: You can also
+    - link "check plagiarism"
+    - text: ","
+    - link "grammar"
+    - text: ", and"
+    - link "punctuation"
+    - text: of edited text in our online editor.
+  - listitem:
+    - strong: "Paraphrase Text:"
+    - text: If you’re writing plain text in our
+    - link "Online Notepad"
+    - text: ", you also have the option to"
+    - link "paraphrase"
+    - text: "&"
+    - link "summarize"
+    - text: it in the same typing pad.
+  - listitem:
+    - strong: "Write Essay:"
+    - text: If you're an Essayist then Editpad online notepad is the best choice to save your essays online, also you can use our
+    - link "essay writer"
+    - text: to write unique and effective essays using artificial intelligence.
+  - listitem:
+    - strong: "Thesis, Sentence, and Paragraph Writing:"
+    - text: Students and writers can use Editpad's online notepad to write down their research and save it to their browser for use at any time. They can also use our
+    - link "thesis statement generator"
+    - text: ","
+    - link "AI sentence generator"
+    - text: ", and"
+    - link "AI paragraph generator"
+    - text: ", which are trained with advanced AI models for help in writing thesis statements, sentences and paragraphs."
+  - listitem:
+    - strong: "Writing Stories:"
+    - text: Authors can use our notepad online to save their ideas to remember storylines. They can also use our
+    - link "AI story generator"
+    - text: to write stories of every genre in seconds.
+  - listitem:
+    - strong: "No Installation:"
+    - text: The best thing about Plain Text Editor is that you don’t need to install it to complete your tasks.
+  - listitem:
+    - strong: "Converts Rich Text:"
+    - text: Remove text formatting in word, excel and google docs.
+    - strong
+    - text: It converts rich text to plain text. For formatted text, use our
+    - link "rich text editor"
+    - text: .
+  - listitem:
+    - strong: "Best Alternative:"
+    - text: The online alternative of Notepad++, Google Docs, and Microsoft Notepad
+  - listitem:
+    - strong: "Download and Save:"
+    - text: Editpad provides an option to download and save the edited text directly into the smart device just with a single click.
+    - img "Text Editor"
+  - listitem:
+    - paragraph:
+      - strong: "Full Screen:"
+      - text: Full screen feature expands text editor area to full screen. It can be reverted to normal by pressing the “Esc button”
+  - listitem:
+    - paragraph:
+      - strong: "Share file:"
+      - text: Directly share your notes with others by using our “share note” option. You can create and share unlimited files.
+  - listitem:
+    - paragraph:
+      - strong: "Password Protection:"
+      - text: Secure your shared notes using passwords. Only people who know the password can view your plain text.
+  - listitem:
+    - paragraph:
+      - strong: "Upload File:"
+      - text: You can directly upload files from your local device and edit text online. The following file formats are supported.
+    - list:
+      - listitem:
+        - paragraph: .DOC / .DOCX (Microsoft Word documents)
+      - listitem:
+        - paragraph: .TXT (plain text files)
+      - listitem:
+        - paragraph: .PDF
+  - listitem:
+    - paragraph:
+      - strong: "Mobile Application:"
+      - text: Android and iOS mobile apps are available on the Play Store and Apple Store.
+  - listitem:
+    - paragraph:
+      - strong: Convert to Handwriting
+      - text: ": Convert your written"
+      - link "text to handwriting"
+      - text: text.
+  - listitem:
+    - paragraph:
+      - strong: "Generate Conclusion / Abstract:"
+      - text: To generate a conclusion or abstract of your written text,
+      - link "abstract generator"
+      - text: ", and"
+      - link "conclusion generator"
+      - text: are developed.
+      - link "Alphabetizer"
+      - text: is also available to make listings in sequence.
+- heading "Uses of Editpad Online:" [level=2]:
+  - strong: "Uses of Editpad Online:"
+- paragraph: "The most common uses of our online NotePad are:"
+- list:
+  - listitem: It helps to write and edit the text in no time.
+  - listitem: Students and other users can quickly create online notes without installing text editing software.
+  - listitem: Allows you to check the originality of written content
+  - listitem: Bloggers, writers, and webmasters can use our paraphraser to rewrite the content and avoid plagiarism
+  - listitem: It helps developers to work on the same file simultaneously working on different projects
+- heading "Adding Strikethrough Text in the Notepad?" [level=2]
+- paragraph:
+  - text: Our online notepad does not have built-in strikethrough text formatting options. You have to use the
+  - link "Strikethrough Text"
+  - text: tool to make your text strikethrough and then copy it.
+- heading "How to quickly repeat text multiple times in a notepad?" [level=2]
+- paragraph:
+  - text: By using a
+  - link "Text Repeater"
+  - text: tool, you can easily repeat the same text multiple times and copy it. You can then paste the copied text using the paste command (“CTRL + V” or “CMD + V”) in the notepad.
+- heading "Do we save your notes?" [level=2]
+- paragraph: No, we do not save any of your private data. All notes are saved on your local device using cookies.
+- heading "New Features and tools:" [level=2]
+- paragraph:
+  - text: You can now use
+  - link "Invisible Character"
+  - text: ","
+  - link "Convert Case"
+  - text: ","
+  - link "Upside Down Text"
+  - text: ","
+  - link "Reverse Text"
+  - text: ","
+  - link "Weird Text"
+  - text: ", and"
+  - link "Small Text"
+  - text: at Editpad.
+- heading "Supported Languages:" [level=2]
+- paragraph:
+  - link "ES"
+  - text: ","
+  - link "FR"
+  - text: ","
+  - link "NL"
+  - text: ","
+  - link "DE"
+  - text: ","
+  - link "RU"
+  - text: ","
+  - link "BR"
+  - text: ","
+  - link "JA"
+  - text: ","
+  - link "IT"
+  - text: ","
+  - link "PL"
+  - text: ","
+  - link "ID"
+  - text: ","
+  - link "KO"
+  - text: ","
+  - link "FI"
+  - text: ","
+  - link "HE"
+  - text: ","
+  - link "SV"
+  - text: ","
+  - link "TR"
+  - text: ","
+  - link "CS"
+  - text: ","
+  - link "AR"
+  - text: ","
+  - link "RO"
+  - text: ","
+  - link "TH"
+  - text: ","
+  - link "NO"
+- link "Get it on Google Play":
+  - img "Get it on Google Play"
+- link "Get it on Google Play":
+  - img "Get it on Google Play"
+- link "Get it on Google Play":
+  - img "Get it on Google Play"
+- link "Get it on Google Windows":
+  - img "Get it on Google Windows"
+- heading "Recent Blogs" [level=2]
+- text: Sep 20, 2024
+- 'link "Narrative Paragraphs: Elements, Format, Writing, and Examples"'
+- text: Sep 05, 2024
+- link "Expository Paragraph Writing (with Examples)"
+- text: Aug 26, 2024
+- link "How to Write a Topic Sentence? (Examples & Tips)"
+- text: July 24, 2024
+- link "How to Write a Paragraph?"
+- text: Jun 20, 2024
+- 'link "ChatGPT-4o vs. Meta AI: Who Generates the Best Stories?"'
+- text: Jun 03, 2024
+- link "Difference Between ChatGPT-3.5 vs ChatGPT-4 vs ChatGPT-4o"
+- text: May 16, 2023
+- link "Difference Between Summarizing and Paraphrasing"
+- text: Apr 16, 2023
+- link "Mastering The Art Of Writing With Editpad & ChatGPT"
+- text: Jan 31, 2023
+- link "What is Paraphrasing?"
+- text: Dec 19, 2022
+- link "What Is Plagiarism?"
+- button "Upload Icon Upload File":
+  - img "Upload Icon"
+  - text: Upload File
+- button "Download Icon Download":
+  - img "Download Icon"
+  - text: Download
+- img "Language Icon"
+- text: Language
+- img "Caret Icon"
+- link "Our Blogs"
+- img "Full Screen Icon"
+- paragraph: Full Screen
+- text: Give Feedback 0 words 0 Character 0 Sentence
+- textbox "Untitled Document"
+- text: Formatting
+- checkbox
+- button "New File Icon New Note":
+  - img "New File Icon"
+  - text: New Note
+- img "Sidebar Open Icon"
+- paragraph: SAVED NOTES
+- paragraph: Saved Document List...
+- textbox
+```
+
+# Test source
+
+```ts
+   1 | //https://www.editpad.org/
+   2 | import {test , expect} from '@playwright/test';
+   3 |
+   4 | test('test editpad @editpad', async({page}) =>{
+   5 |
+>  6 |     await page.goto("https://www.editpad.org/");
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+   7 |     await page.waitForLoadState("networkidle");
+   8 |
+   9 |     const texttopastLine1  = "Hello everyone. My is Sampath."
+  10 |     const texttopasteline2 = "I am here for Interview for Automation Qa.";
+  11 |
+  12 |     await page.locator("//img[@alt='Close Icon']").first().click();
+  13 |     await page.locator('//textarea[@id="textarea__editor"]').fill(texttopastLine1 +"\n"+ texttopasteline2);
+  14 |     await page.locator('//span[@class="slider round"]').click();
+  15 |
+  16 |
+  17 |     // await page.evaluate(() => {
+  18 |     //     const textarea = document.getElementById("textarea__editor") as HTMLTextAreaElement;
+  19 |     //     textarea.setSelectionRange(0, 28); // Select "Hello everyone. My name is Sampath."
+  20 |     // });
+  21 |
+  22 |     const textarea = page.locator('//textarea[@id="textarea__editor"]');
+  23 | await textarea.click();
+  24 |
+  25 | // Move cursor to the start
+  26 | await page.keyboard.press("Control+End"); // Move to the end
+  27 | await page.keyboard.press("ArrowLeft"); // Move cursor before the last character
+  28 |
+  29 | // Select "Automation Qa" using Shift + ArrowLeft
+  30 | for (let i = 0; i < "Automation Qa".length; i++) {
+  31 |     await page.keyboard.press("Shift+ArrowLeft");
+  32 | }
+  33 |     // await page.locator('//p[text()="Hello everyone. My is Sampath."]').dblclick({timeout:5000});
+  34 |     // await page.locator('//p[contains(text(),"texttopastLine1")]').click();
+  35 |     // await page.locator('//p[contains(text(),"texttopastLine1")]').click();
+  36 |     // await page.locator('//span[@class="heading__face"]').click();
+  37 |     await page.locator('//span[text()="H3"]').click();
+  38 | })
+  39 |
+```

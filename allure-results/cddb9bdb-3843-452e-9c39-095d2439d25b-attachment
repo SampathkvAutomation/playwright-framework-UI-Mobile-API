@@ -1,0 +1,107 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test editpad @editpad
+- Location: C:\Users\kvsam\playwright-framework-UI-Mobile-API\tests\ui\Editpadorg.spec.ts:4:5
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: locator('//*[text()="Hello everyone. My is Sampath."]') resolved to 2 elements:
+    1) <p>Hello everyone. My is Sampath.</p> aka locator('#editorTextarea').getByText('Hello everyone. My is Sampath.')
+    2) <p>Hello everyone. My is Sampath.</p> aka locator('#content').getByText('Hello everyone. My is Sampath.')
+
+Call log:
+  - waiting for locator('//*[text()="Hello everyone. My is Sampath."]')
+
+    at C:\Users\kvsam\playwright-framework-UI-Mobile-API\tests\ui\Editpadorg.spec.ts:15:72
+```
+
+# Page snapshot
+
+```yaml
+- link "Edit Pad - Free Online Text Editor Editpad":
+  - img "Edit Pad - Free Online Text Editor"
+  - text: Editpad
+- link "+"
+- img "search on editpad"
+- link "Chat Icon Chat":
+  - img "Chat Icon"
+  - text: Chat
+- link "Premium Button Icon Get Premium":
+  - img "Premium Button Icon"
+  - text: Get Premium
+- link "Login"
+- link "AI Detector"
+- link "Humanize AI Text"
+- link "Plagiarism Checker"
+- link "Paraphrasing Tool"
+- link "Story Generator"
+- link "Text Summarizer"
+- link "AI Essay Writer"
+- button "Upload Icon Upload File":
+  - img "Upload Icon"
+  - text: Upload File
+- button "Download Icon Download":
+  - img "Download Icon"
+  - text: Download
+- img "Language Icon"
+- text: Language
+- img "Caret Icon"
+- link "Our Blogs"
+- img "Full Screen Icon"
+- paragraph: Full Screen
+- text: Give Feedback 13 words 73 Character 3 Sentence
+- textbox "Untitled Document": Hello everyone. My i
+- text: Formatting
+- checkbox [checked]
+- button "New File Icon New Note":
+  - img "New File Icon"
+  - text: New Note
+- img "Sidebar Open Icon"
+- paragraph: SAVED NOTES
+- paragraph: Hello everyone. My i
+- text: Headings
+- img
+- img "b"
+- img "i"
+- img "p"
+- img "bullet_list"
+- img "number_list"
+- img "Undo"
+- img "Redo"
+- paragraph: Hello everyone. My is Sampath.
+- paragraph: I am here for Interview for Automation Qa.
+```
+
+# Test source
+
+```ts
+   1 | //https://www.editpad.org/
+   2 | import {test , expect} from '@playwright/test';
+   3 |
+   4 | test('test editpad @editpad', async({page}) =>{
+   5 |
+   6 |     await page.goto("https://www.editpad.org/");
+   7 |     await page.waitForLoadState("networkidle");
+   8 |
+   9 |     const texttopastLine1  = "Hello everyone. My is Sampath."
+  10 |     const texttopasteline2 = "I am here for Interview for Automation Qa.";
+  11 |
+  12 |     await page.locator("//img[@alt='Close Icon']").first().click();
+  13 |     await page.locator('//textarea[@id="textarea__editor"]').fill(texttopastLine1 +"\n"+ texttopasteline2);
+  14 |     await page.locator('//span[@class="slider round"]').click();
+> 15 |     await page.locator('//*[text()="Hello everyone. My is Sampath."]').click({timeout:3000});
+     |                                                                        ^ Error: locator.click: Error: strict mode violation: locator('//*[text()="Hello everyone. My is Sampath."]') resolved to 2 elements:
+  16 |     await page.locator('//p[contains(text(),"texttopastLine1")]').click();
+  17 |     await page.locator('//p[contains(text(),"texttopastLine1")]').click();
+  18 |     await page.locator('//span[@class="heading__face"]').click();
+  19 |     await page.locator('//span[text()="H3"]').click();
+  20 | })
+  21 |
+```

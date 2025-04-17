@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2497","@uitest should login successfully","Desktop Chromium","Tue Feb 25 13:11:33 IST 2025","passed","Tue Feb 25 13:11:35 IST 2025","","tests\ui\login.spec.ts","",""
+"","1360","@apitest get API requests","Desktop Chromium","Tue Feb 25 14:13:59 IST 2025","passed","Tue Feb 25 14:14:00 IST 2025","","tests\api\apitest.spec.ts","",""
+"","2545","should login successfully","Desktop WebKit","Tue Feb 25 09:02:46 IST 2025","passed","Tue Feb 25 09:02:48 IST 2025","","tests\ui\login.spec.ts","",""
+"","3345","should login successfully","Desktop Firefox","Tue Feb 25 09:02:46 IST 2025","passed","Tue Feb 25 09:02:49 IST 2025","","tests\ui\login.spec.ts","",""
+"","19024","should login successfully","Desktop Chromium","Tue Feb 25 09:58:40 IST 2025","passed","Tue Feb 25 09:58:59 IST 2025","","tests\ui\login.spec.ts","",""

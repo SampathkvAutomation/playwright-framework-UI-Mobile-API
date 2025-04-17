@@ -1,0 +1,663 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: open Amazon @amazontest
+- Location: C:\Users\kvsam\playwright-framework-UI-Mobile-API\tests\ui\UIexamples\Amazon.spec.ts:5:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "99,990.00"
+Received: "   182,990.00 "
+    at C:\Users\kvsam\playwright-framework-UI-Mobile-API\tests\ui\UIexamples\Amazon.spec.ts:16:15
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content": Main content
+    - listitem:
+      - link "Results"
+    - listitem:
+      - link "Filters"
+    - listitem:
+      - button "Filters"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in": .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": MSI-Windows-GeForce-RTX4050-B8VE-884IN
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - img "India"
+      - text: EN
+    - link "Hello, sign in Account & Lists"
+    - link "Returns & Orders"
+    - link "0 items in cart"
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "MX Player"
+      - listitem:
+        - link "Sell"
+      - listitem:
+        - link "Bestsellers"
+      - listitem:
+        - link "Today's Deals"
+      - listitem:
+        - link "Prime"
+      - listitem:
+        - link "Mobiles"
+      - listitem:
+        - link "Customer Service"
+      - listitem:
+        - link "New Releases"
+      - listitem:
+        - link "Electronics"
+      - listitem:
+        - link "Fashion"
+      - listitem:
+        - link "Amazon Pay"
+      - listitem:
+        - link "Home & Kitchen"
+      - listitem:
+        - link "Computers"
+      - listitem:
+        - link "Books"
+      - listitem:
+        - link "Car & Motorbike"
+      - listitem:
+        - link "Toys & Games"
+      - listitem:
+        - link "Beauty & Personal Care"
+      - listitem:
+        - link "Home Improvement"
+      - listitem:
+        - link "Gift Cards"
+      - listitem:
+        - link "Sports, Fitness & Outdoors"
+      - listitem:
+        - link "Custom Products"
+      - listitem:
+        - link "Grocery & Gourmet Foods"
+      - listitem:
+        - link "Health, Household & Personal Care"
+      - listitem:
+        - link "Video Games"
+      - listitem:
+        - link "Baby"
+      - listitem:
+        - link "Gift Ideas"
+      - listitem:
+        - link "Pet Supplies"
+      - listitem:
+        - link "Audible"
+      - listitem:
+        - link "AmazonBasics"
+      - listitem:
+        - link "Subscribe & Save"
+      - listitem:
+        - link "Kindle eBooks"
+    - dialog
+- 'heading "3 results for \"MSI-Windows-GeForce-RTX4050-B8VE-884IN\" Sort by: Featured" [level=1]':
+  - heading "3 results for \"MSI-Windows-GeForce-RTX4050-B8VE-884IN\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "MSI":
+  - img "MSI"
+- link "MSI Powerful Gaming Laptops"
+- link "Shop MSI"
+- link "Branded image from MSI":
+  - img "Branded image from MSI"
+- link "MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN":
+  - img "MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN"
+- link "Limited time deal"
+- link "₹99,990 Eligible for Prime. ₹1,29,990 (23% off)":
+  - text: ₹99,990
+  - img "Eligible for Prime."
+  - text: ₹1,29,990 (23% off)
+- link "MSI Cyborg 15 AI, Intel Core Ultra 7 155H,Built-in AI, 40CM Gaming Laptop(16GB/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4060, GDDR6 8GB/Translucent Black/1.9Kg), A1VFK-049IN":
+  - img "MSI Cyborg 15 AI, Intel Core Ultra 7 155H,Built-in AI, 40CM Gaming Laptop(16GB/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4060, GDDR6 8GB/Translucent Black/1.9Kg), A1VFK-049IN"
+- link "₹94,990 Eligible for Prime.":
+  - text: ₹94,990
+  - img "Eligible for Prime."
+- link "MSI Thin 15, Intel 13th Gen. Core i5-13420H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 3050,GDDR6 4GB/Cosmos Gray/1.86Kg), B13UC-1805IN":
+  - img "MSI Thin 15, Intel 13th Gen. Core i5-13420H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 3050,GDDR6 4GB/Cosmos Gray/1.86Kg), B13UC-1805IN"
+- link "₹61,990 Eligible for Prime.":
+  - text: ₹61,990
+  - img "Eligible for Prime."
+- button "Leave feedback on Sponsored ad": Sponsored
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN":
+      - heading "Sponsored Ad - MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN" [level=2]: MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN
+    - button "4.5 out of 5 stars, rating details"
+    - link "29 ratings"
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹99,990 M.R.P: ₹1,29,990"'
+    - text: (23% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Lenovo IdeaPad Slim 5 Snapdragon X Plus X1P-42-100 (16GB RAM/1TB SSD/Integrated Qualcomm Adreno/Copilot+ PC/WUXGA IPS Display/14 (35.5cm)/Windows 11/MS Office 2021/Grey/1.89Kg), 83HL0035IN AI Laptop":
+      - heading "Sponsored Ad - Lenovo IdeaPad Slim 5 Snapdragon X Plus X1P-42-100 (16GB RAM/1TB SSD/Integrated Qualcomm Adreno/Copilot+ PC/WUXGA IPS Display/14 (35.5cm)/Windows 11/MS Office 2021/Grey/1.89Kg), 83HL0035IN AI Laptop" [level=2]: Lenovo IdeaPad Slim 5 Snapdragon X Plus X1P-42-100 (16GB RAM/1TB SSD/Integrated Qualcomm Adreno/Copilot+ PC/WUXGA IPS Display/14 (35.5cm)/Windows 11/MS Office 2021/Grey/1.89Kg), 83HL0035IN AI Laptop
+    - button "5.0 out of 5 stars, rating details"
+    - link "1 ratings"
+    - text: Price, product page
+    - 'link "₹76,990 M.R.P: ₹1,25,890"'
+    - text: (39% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - MSI Modern 14, Intel 12th Gen. i7 1255U,36CM Laptop(16GB/512GB NVMe SSD/Windows 11 Home/Iris Xe/Classic Black/1.4Kg), C12MO-1202IN":
+      - heading "Sponsored Ad - MSI Modern 14, Intel 12th Gen. i7 1255U,36CM Laptop(16GB/512GB NVMe SSD/Windows 11 Home/Iris Xe/Classic Black/1.4Kg), C12MO-1202IN" [level=2]: MSI Modern 14, Intel 12th Gen. i7 1255U,36CM Laptop(16GB/512GB NVMe SSD/Windows 11 Home/Iris Xe/Classic Black/1.4Kg), C12MO-1202IN
+    - button "3.8 out of 5 stars, rating details"
+    - link "14 ratings"
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹47,990 M.R.P: ₹64,990"'
+    - text: (26% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - MSI Commercial 14 H, Intel 13th Gen i7-13700H, 36CM Business Laptop(32GB/1TB NVMe SSD/Windows 11 Pro/Intel Xe Graphics/Solid Grey/1.6Kg), A13MG vPro-065IN":
+      - heading "Sponsored Ad - MSI Commercial 14 H, Intel 13th Gen i7-13700H, 36CM Business Laptop(32GB/1TB NVMe SSD/Windows 11 Pro/Intel Xe Graphics/Solid Grey/1.6Kg), A13MG vPro-065IN" [level=2]: MSI Commercial 14 H, Intel 13th Gen i7-13700H, 36CM Business Laptop(32GB/1TB NVMe SSD/Windows 11 Pro/Intel Xe Graphics/Solid Grey/1.6Kg), A13MG vPro-065IN
+    - button "4.0 out of 5 stars, rating details"
+    - link "3 ratings"
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹97,990 M.R.P: ₹1,23,990"'
+    - text: (21% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: "FREE delivery Sat, 29 Mar Only 2 left in stock. Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - link "MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN":
+      - heading "MSI Katana A17 AI, AMD 8th Gen. Ryzen 9 8945HS,Built-in AI, 44CM Laptop(16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/Black/2.6Kg), B8VE-884IN" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "29 ratings"
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹99,990 M.R.P: ₹1,29,990"'
+    - text: (23% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - link "MSI Raider GE78 HX, Intel 14th Gen. i9-14900HX, 43.18CM QHD+ 240Hz Gaming Laptop (32GB/2TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4090, GDDR6 16GB/Core Black/3.1Kg), 14VIG-804IN":
+      - heading "MSI Raider GE78 HX, Intel 14th Gen. i9-14900HX, 43.18CM QHD+ 240Hz Gaming Laptop (32GB/2TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4090, GDDR6 16GB/Core Black/3.1Kg), 14VIG-804IN" [level=2]
+    - button "2.7 out of 5 stars, rating details"
+    - link "4 ratings"
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹3,39,990 M.R.P: ₹4,19,990"'
+    - text: (19% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - link "MSI Geforce RTX 4060 Ventus 2X Black 8G Oc 8Gb Gddr6 128-Bit Gaming Graphic Card, pci_e":
+      - heading "MSI Geforce RTX 4060 Ventus 2X Black 8G Oc 8Gb Gddr6 128-Bit Gaming Graphic Card, pci_e" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "1,768 ratings"
+    - text: Price, product page
+    - 'link "₹29,811 M.R.P: ₹57,999"'
+    - text: (49% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Service: Device Setup"
+    - button "Add to cart"
+    - text: More Buying Choices ₹29,748
+    - link "(9 new offers)"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Microsoft 365 Family – 6 Devices- up to 6 TB of cloud storage (1 TB per person)- Advanced security - Innovative apps with AI - 12-Month Subscription - Windows/Mac (Email delivery in 2 hours-No CD)":
+      - heading "Sponsored Ad - Microsoft 365 Family – 6 Devices- up to 6 TB of cloud storage (1 TB per person)- Advanced security - Innovative apps with AI - 12-Month Subscription - Windows/Mac (Email delivery in 2 hours-No CD)" [level=2]: Microsoft 365 Family – 6 Devices- up to 6 TB of cloud storage (1 TB per person)- Advanced security - Innovative apps with AI - 12-Month Subscription - Windows/Mac (Email delivery in 2 hours-No CD)
+    - button "4.3 out of 5 stars, rating details"
+    - link "4,877 ratings"
+    - text: 400+ bought in past month
+    - link "Software"
+    - text: Price, product page
+    - 'link "₹7,299 M.R.P: ₹8,199"'
+    - text: (11% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Today
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - MSI Modern 15 H AI, Intel 1st Gen. Ultra 5 125H,Built-in AI, 40CM Laptop(16GB/512GB NVMe SSD/Windows 11 Home/MSO 2021/Intel Arc/Classic Black/1.9Kg), C1MG-049IN":
+      - heading "Sponsored Ad - MSI Modern 15 H AI, Intel 1st Gen. Ultra 5 125H,Built-in AI, 40CM Laptop(16GB/512GB NVMe SSD/Windows 11 Home/MSO 2021/Intel Arc/Classic Black/1.9Kg), C1MG-049IN" [level=2]: MSI Modern 15 H AI, Intel 1st Gen. Ultra 5 125H,Built-in AI, 40CM Laptop(16GB/512GB NVMe SSD/Windows 11 Home/MSO 2021/Intel Arc/Classic Black/1.9Kg), C1MG-049IN
+    - button "3.5 out of 5 stars, rating details"
+    - link "4 ratings"
+    - text: Price, product page
+    - 'link "₹53,989 M.R.P: ₹75,990"'
+    - text: (29% off) 7.5% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: "FREE delivery Fri, 28 Mar Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - MSI Modern 15, Intel 12th Gen. i7-1255U, 38CM FHD 60Hz Laptop(16GB/512GB NVMe SSD/Windows 11 Home/MSO 2021/Intel Iris Xe Graphics/Classic Black/1.7Kg), B12MO-1006IN":
+      - heading "Sponsored Ad - MSI Modern 15, Intel 12th Gen. i7-1255U, 38CM FHD 60Hz Laptop(16GB/512GB NVMe SSD/Windows 11 Home/MSO 2021/Intel Iris Xe Graphics/Classic Black/1.7Kg), B12MO-1006IN" [level=2]: MSI Modern 15, Intel 12th Gen. i7-1255U, 38CM FHD 60Hz Laptop(16GB/512GB NVMe SSD/Windows 11 Home/MSO 2021/Intel Iris Xe Graphics/Classic Black/1.7Kg), B12MO-1006IN
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹52,990 M.R.P: ₹69,990"'
+    - text: (24% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar Only 1 left in stock. Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Logitech MX Master 2S Bluetooth Edition Wireless Mouse, Multi-Surface, Hyper-Fast Scrolling, Ergonomic, Rechargeable, Connects Up to 3 Mac/PC Computers":
+      - heading "Sponsored Ad - Logitech MX Master 2S Bluetooth Edition Wireless Mouse, Multi-Surface, Hyper-Fast Scrolling, Ergonomic, Rechargeable, Connects Up to 3 Mac/PC Computers" [level=2]: Logitech MX Master 2S Bluetooth Edition Wireless Mouse, Multi-Surface, Hyper-Fast Scrolling, Ergonomic, Rechargeable, Connects Up to 3 Mac/PC Computers
+    - button "4.3 out of 5 stars, rating details"
+    - link "14,965 ratings"
+    - text: 500+ bought in past month
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹4,795 M.R.P: ₹8,995"'
+    - text: (47% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar
+    - button "Add to cart"
+  - listitem:
+    - link
+    - link "+17 other colors/patterns"
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - PowerA Advantage Wired Gaming Controller for Xbox Series X/S, Xbox One, PC, Windows 10/11, Wild Style (Officially Licensed)":
+      - heading "Sponsored Ad - PowerA Advantage Wired Gaming Controller for Xbox Series X/S, Xbox One, PC, Windows 10/11, Wild Style (Officially Licensed)" [level=2]: PowerA Advantage Wired Gaming Controller for Xbox Series X/S, Xbox One, PC, Windows 10/11, Wild Style (Officially Licensed)
+    - button "4.2 out of 5 stars, rating details"
+    - link "3,175 ratings"
+    - link "Xbox One"
+    - text: Price, product page
+    - 'link "₹2,904.05 ( ₹2,90,405 /100 g) M.R.P: ₹4,999"'
+    - text: (42% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Cosmic Byte Firestorm RGB Wired Gaming Mouse, 67 Grams, 12400DPI, 1000Hz Polling, Pixart 3327 Sensor, 10M Switches, Paracord Cable, Software Support Upgraded PTFE Feet (White)":
+      - heading "Sponsored Ad - Cosmic Byte Firestorm RGB Wired Gaming Mouse, 67 Grams, 12400DPI, 1000Hz Polling, Pixart 3327 Sensor, 10M Switches, Paracord Cable, Software Support Upgraded PTFE Feet (White)" [level=2]: Cosmic Byte Firestorm RGB Wired Gaming Mouse, 67 Grams, 12400DPI, 1000Hz Polling, Pixart 3327 Sensor, 10M Switches, Paracord Cable, Software Support Upgraded PTFE Feet (White)
+    - button "4.3 out of 5 stars, rating details"
+    - link "168 ratings"
+    - text: 100+ bought in past month
+    - link "Limited time deal"
+    - text: Price, product page
+    - 'link "₹999 M.R.P: ₹1,499"'
+    - text: (33% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 27 Mar Or fastest delivery Tomorrow, 26 Mar
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - MSI Vector 16 HX, Intel 14th Gen. i7-14700HX, 41CM QHD+ 240Hz Gaming Laptop (32GB/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4070, GDDR6 8GB/Cosmos Grey/2.7Kg), A14VGG-279IN":
+      - heading "Sponsored Ad - MSI Vector 16 HX, Intel 14th Gen. i7-14700HX, 41CM QHD+ 240Hz Gaming Laptop (32GB/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4070, GDDR6 8GB/Cosmos Grey/2.7Kg), A14VGG-279IN" [level=2]: MSI Vector 16 HX, Intel 14th Gen. i7-14700HX, 41CM QHD+ 240Hz Gaming Laptop (32GB/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4070, GDDR6 8GB/Cosmos Grey/2.7Kg), A14VGG-279IN
+    - button "4.5 out of 5 stars, rating details"
+    - link "5 ratings"
+    - text: Price, product page
+    - 'link "₹1,82,990 M.R.P: ₹2,29,990"'
+    - text: (20% off) No Cost EMI available on select cards.
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 27 Mar Only 1 left in stock. Service: Device Setup"
+    - button "Add to cart"
+  - listitem:
+    - link
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Microsoft Office Home 2024 - Lifetime Validity - Email Delivery in 3 hours":
+      - heading "Sponsored Ad - Microsoft Office Home 2024 - Lifetime Validity - Email Delivery in 3 hours" [level=2]: Microsoft Office Home 2024 - Lifetime Validity - Email Delivery in 3 hours
+    - button "4.5 out of 5 stars, rating details"
+    - link "9 ratings"
+    - text: 100+ bought in past month
+    - link "Unknown Binding"
+    - text: Price, product page
+    - 'link "₹7,759 ( ₹7,75,900 /100 g) M.R.P: ₹9,199"'
+    - text: (16% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Today
+- link
+- link
+- text: Sponsored
+- link "Mackie HM-4 Headphone Amplifier":
+  - heading "Mackie HM-4 Headphone Amplifier" [level=2]
+- button "4.5 out of 5 stars, rating details"
+- link "1,742 ratings"
+- text: Price, product page
+- 'link "₹4,500 M.R.P: ₹5,200"'
+- text: (13% off)
+- img "Amazon Prime"
+- text: Get it by Sunday 30 March
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from MSI":
+  - img "Branded image from MSI"
+- link "MSI":
+  - img "MSI"
+- link "MSI Powerful Gaming Laptops"
+- link "Branded image from proffisy":
+  - img "Branded image from proffisy"
+- link "proffisy":
+  - img "proffisy"
+- link "Premium Quality Ink For Brother BT6000BK BTD60BK"
+- link "Branded image from MICROWARE":
+  - img "Branded image from MICROWARE"
+- link "MICROWARE":
+  - img "MICROWARE"
+- link "Video And Game Capture Card For Live Streaming"
+- heading "Need help?" [level=2]
+- link "Visit the help section"
+- text: or
+- link "contact us"
+- button "Leave feedback on Sponsored advertisement"
+- link "Go back to filtering menu"
+- link "Skip to main search results"
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - checkbox
+        - text: Include Out of Stock
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results": 4 Stars & Up & Up
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Alexa Skills"
+    - listitem:
+      - link "Amazon Devices & Accessories"
+    - listitem:
+      - link "Appliances"
+    - listitem:
+      - link "Apps & Games"
+    - listitem:
+      - link "Audible Books & Originals"
+    - listitem:
+      - link "Baby"
+    - listitem:
+      - link "Bags, Wallets and Luggage"
+    - listitem:
+      - link "Beauty"
+    - listitem:
+      - link "Books"
+    - listitem:
+      - link "Car & Motorbike"
+    - listitem:
+      - link "Clothing & Accessories"
+    - listitem:
+      - link "Collectibles & Fine Art"
+    - listitem:
+      - link "Computers & Accessories"
+    - listitem:
+      - link "Electronics"
+    - listitem:
+      - link "Fashion"
+    - listitem:
+      - link "Gift Cards"
+    - listitem:
+      - link "Grocery & Gourmet Foods"
+    - listitem:
+      - link "Health & Personal Care"
+    - listitem:
+      - link "Home & Kitchen"
+    - listitem:
+      - link "Home Improvement"
+    - listitem:
+      - link "Industrial & Scientific"
+    - listitem:
+      - link "Jewellery"
+    - listitem:
+      - link "Kindle Store"
+    - listitem:
+      - link "Movies & TV Shows"
+    - listitem:
+      - link "Music"
+    - listitem:
+      - link "Musical Instruments"
+    - listitem:
+      - link "Office Products"
+    - listitem:
+      - link "Outdoor Living"
+    - listitem:
+      - link "Pet Supplies"
+    - listitem:
+      - link "Prime Video"
+    - listitem:
+      - link "Shoes & Handbags"
+    - listitem:
+      - link "Software"
+    - listitem:
+      - link "Sports, Fitness & Outdoors"
+    - listitem:
+      - link "Toys & Games"
+    - listitem:
+      - link "Video Games"
+    - listitem:
+      - link "Watches"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon"
+  - listitem:
+    - link "Careers"
+  - listitem:
+    - link "Press Releases"
+  - listitem:
+    - link "Amazon Science"
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook"
+  - listitem:
+    - link "Twitter"
+  - listitem:
+    - link "Instagram"
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon"
+  - listitem:
+    - link "Sell under Amazon Accelerator"
+  - listitem:
+    - link "Protect and Build Your Brand"
+  - listitem:
+    - link "Amazon Global Selling"
+  - listitem:
+    - link "Supply to Amazon"
+  - listitem:
+    - link "Become an Affiliate"
+  - listitem:
+    - link "Fulfilment by Amazon"
+  - listitem:
+    - link "Advertise Your Products"
+  - listitem:
+    - link "Amazon Pay on Merchants"
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account"
+  - listitem:
+    - link "Returns Centre"
+  - listitem:
+    - link "Recalls and Product Safety Alerts"
+  - listitem:
+    - link "100% Purchase Protection"
+  - listitem:
+    - link "Amazon App Download"
+  - listitem:
+    - link "Help"
+- link "Amazon India Home"
+- link "Choose a language for shopping. Current selection is English.": English
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale"
+  - listitem:
+    - link "Privacy Notice"
+  - listitem:
+    - link "Interest-Based Ads"
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import {test,expect} from '@playwright/test';
+   2 |
+   3 |
+   4 |
+   5 | test('open Amazon @amazontest', async({page}) =>
+   6 | {
+   7 |
+   8 |     await page.goto("https://www.amazon.in/");
+   9 |     await page.waitForLoadState("networkidle");
+  10 |     await page.locator("//input[@id='twotabsearchtextbox']").fill("MSI-Windows-GeForce-RTX4050-B8VE-884IN");
+  11 |     await page.locator('#nav-search-submit-button').click();
+  12 |     const page1Promise = page.waitForEvent('popup');
+  13 |     await page.getByRole('link', { name: 'Sponsored Ad - MSI Vector 16' }).first().click();
+  14 |     const page1 = await page1Promise;
+  15 |     let price = await page1.locator("//span[contains(text(),'Without Exchange')]/following::span[2]/parent::span").innerText();
+> 16 | expect(price).toBe("99,990.00");
+     |               ^ Error: expect(received).toBe(expected) // Object.is equality
+  17 |
+  18 |
+  19 | }
+  20 | )
+```
